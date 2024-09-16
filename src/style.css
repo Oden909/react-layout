@@ -1,0 +1,267 @@
+@font-face{
+    font-family: "ABeeZee";
+    src: local("ABeeZee-Italic"),
+         url("./fonts/ABeeZee/ABeeZee-Italic.ttf") format("truetype");
+    font-style: italic;
+  }
+  
+@font-face{
+    font-family: "ABeeZee";
+    src: local("ABeeZee-Regular"),
+         url("./fonts/ABeeZee/ABeeZee-Regular.ttf") format("truetype");
+    font-style: normal;
+}
+  
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 200px;
+    background-color: #F4F9E2;
+    color: white;
+}
+  
+.header-logo img{
+    height: 119px;
+    width: 118px;
+}
+
+.header-nav{
+    display: flex;
+    gap: 70px;
+}
+  
+.header-nav a{
+    color: black;
+    text-decoration: none;
+    padding: 10px 0;
+    position: relative;
+    font-weight: 400;
+    font-size: 14px;
+}
+  
+.header-nav a:hover::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.header-contact .contact-button{
+    background-color: #F9B640;
+    color: white;
+    border: none;
+    padding: 20px 40px;
+    cursor: pointer;
+    border-radius: 25px;
+    color: white;
+    font-size: 14px;
+    font-style: italic;
+}
+
+  
+.header-contact .contact-button:hover{
+    background-color: #F1C040;
+}
+
+.description-section{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 100px 150px;
+    background-color: #F4F9E2;
+    color: #22356F;
+}
+  
+.description-content{
+    flex: 1;
+    padding-right: 20px;
+    max-width: 630px;
+}
+  
+.description-content h1{
+    font-size: 48px;
+    font-style: italic;
+    margin-bottom: 60px;
+    line-height: 53.9px;
+    font-weight: 400;
+}
+  
+.description-content p{
+    font-size: 24px;
+    line-height: 42.55px;
+}
+  
+.offer-section{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0;
+    background-color: #62D0DF;
+    color: white;
+    min-height: 600px;
+    overflow: hidden;
+}
+
+.offer-content{
+    flex: 1;
+    padding-right: 20px;
+    max-width: 500px;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+}
+
+.offer-content h1{
+    font-size: 36px;
+    font-style: italic;
+    margin-bottom: 20px;
+    line-height: 27.66px;
+    font-weight: 400;
+}
+
+.offer-content p{
+    font-size: 24px;
+    line-height: 35.46px;
+}
+
+.offer-image{
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 50%; 
+    height: 100%; 
+}
+
+.offer-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.service-section{
+    background-color: white;
+    padding-top: 300px;
+}
+  
+.service-texts{
+    margin-bottom: 300px;
+}
+  
+.service-texts p{
+    font-size: 24px;
+    line-height: 34px;
+    color: #22356F; 
+    margin: 0 auto;
+    max-width: 800px;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+  
+.service-items{
+    display: flex;
+    padding: 0;
+    margin-top: 0;
+    
+}
+  
+.service-item{
+    flex: 1;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    height: 480px;
+    position: relative;
+}
+
+.service-item-stripe{
+    width: 100%;
+    max-width: 340px;
+    height: 1px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 30px;
+    left: 11%;
+
+}
+  
+.service-item-text{
+    font-size: 32px;
+    line-height: 34px;
+    font-style: italic;
+    font-weight: 400;
+    margin-top: 40px;
+    max-width: 300px;
+    margin-left: 50px;
+}
+  
+.rental-section{
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 40px 150px;
+    background-color: white;
+    color: #22356F;
+    min-height: 800px;
+    overflow: hidden;
+}
+
+.rental-image{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.rental-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.rental-content{
+    margin-left: 50%;
+    padding-left: 100px;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+}
+
+.rental-content h1{
+    font-size: 36px;
+    font-style: italic;
+    margin-bottom: 20px;
+    line-height: 27px;
+    font-weight: 400;
+}
+
+.rental-content p{
+    font-size: 36px;
+    line-height: 53px;
+    max-width: 100%;
+    font-style: italic;
+}
+
+
+
+  
+  
+  
